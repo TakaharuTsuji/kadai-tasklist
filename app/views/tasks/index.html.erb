@@ -2,7 +2,7 @@
 
 <ul>
   <% @tasks.each do |tsk| %>
-    <li><%= link_to tsk.id, tsk %> : <%= tsk.content %></li>
+    <li><%= link_to tsk.id, tsk %> : <%= tsk.content %>　[<%= tsk.status %>]</li>
   <% end %>
 </ul>
 <%= link_to '新規タスク追加', new_task_path %>
