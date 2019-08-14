@@ -1,17 +1,12 @@
-<div class="row">
-  <aside class="col-sm-3">
     <div class="card">
       <div class="card-header">
-        <h4 class="card-title"><%= @user.name %></h4>
+        <h5 class="card-title"><%= @user.name %></h5>
       </div>
       <div class="card-body">
         <img class="rounded img-fluid" src="<%= gravatar_url(@user, { size: 100 }) %>" alt="">
       </div>
     </div>
-  </aside>
-  <div class="col-sm-9">
-    <ul class="nav nav-tabs nav-justified mb-3">
-      <li class="nav-item"><a href="#" class="nav-link">Tasks</a></li>
-    </ul>
-  </div>
-</div>
+    <div class="row">
+      <a href="/" class='btn btn-lg btn-info mt-4 ml-4'>タスク一覧の表示へ</a>
+    </div>
+
