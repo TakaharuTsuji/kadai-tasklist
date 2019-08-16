@@ -7,7 +7,7 @@ class TasksController < ApplicationController
   end
   
   def show
-    @task = Task.find(params[:id])
+#    @task = Task.find(params[:id])　　#19-8-16 deleted
   end
 
   def new
@@ -27,11 +27,11 @@ class TasksController < ApplicationController
   end
 
   def edit
-    @task = Task.find(params[:id])    
+#    @task = Task.find(params[:id])  #19-8-16 deleted
   end
 
   def update
-    @task = Task.find(params[:id])
+#    @task = Task.find(params[:id]) #19-8-16 deleted
 
     if @task.update(tsk_params)
       flash[:success] = 'タスクは正常に更新されました'
@@ -43,7 +43,7 @@ class TasksController < ApplicationController
   end
 
   def destroy
-    @task = Task.find(params[:id])
+#    @task = Task.find(params[:id]) #19-8-16 deleted
     @task.destroy
 
     flash[:success] = 'タスクは正常に削除されました'
